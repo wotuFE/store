@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+        <script src="http://cdn.bootcss.com/react/15.5.4/react.js"></script>
+		<script src="http://cdn.bootcss.com/react/15.5.4/react-dom.js"></script>
+		<script src="../demos/libs/react-dom.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+	</head>
+	<body>
+		<div id="app">
+
+		</div>
+		<script type="text/babel">
+        import AppBar from 'material-ui/AppBar';
+
+        /**
+         * A simple example of `AppBar` with an icon on the right.
+         * By default, the left icon is a navigation-menu.
+         */
+        const AppBarExampleIcon = () => (
+          <AppBar
+            title="Title"
+            iconClassNameRight="muidocs-icon-navigation-expand-more"
+          />
+        );
+        ReactDOM.render(
+            <AppBarExampleIcon/>,
+            document.getElmentById('app')
+        )
+
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/web1223/!svn/ver/93/a_huruqing/store/json
+END
+login.json
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/web1223/!svn/ver/93/a_huruqing/store/json/login.json
+END
+pay.json
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/web1223/!svn/ver/93/a_huruqing/store/json/pay.json
+END
+addToShopCar.json
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/web1223/!svn/ver/93/a_huruqing/store/json/addToShopCar.json
+END
+shopCarList.json
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/web1223/!svn/ver/93/a_huruqing/store/json/shopCarList.json
+END
+shopListQuery.json
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/web1223/!svn/ver/93/a_huruqing/store/json/shopListQuery.json
+END
+getVerifyCode.json
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/web1223/!svn/ver/93/a_huruqing/store/json/getVerifyCode.json
+END
+placeOrder.json
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/web1223/!svn/ver/93/a_huruqing/store/json/placeOrder.json
+END
+coupon.json
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/web1223/!svn/ver/93/a_huruqing/store/json/coupon.json
+END
+productDetail.json
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/web1223/!svn/ver/93/a_huruqing/store/json/productDetail.json
+END
+register.json
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/web1223/!svn/ver/93/a_huruqing/store/json/register.json
+END
+deleteFromShopCar.json
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/web1223/!svn/ver/93/a_huruqing/store/json/deleteFromShopCar.json
+END

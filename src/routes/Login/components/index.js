@@ -11,14 +11,27 @@ import * as router from 'react-router'
 class Register extends React.Component {
 	constructor(props) {
 		super(props);
+		this.state = {
+			showDialog: false
+		}
+	}
+	componentDidMount() {
+
+	}
+	sure() {
+		this.setState({ showDialog: false });
+		browserHistory.push('/');
+	}
+	cancel() {
+		this.setState({ showDialog: false })
 	}
 	render() {
-		const { sure,cancel,show,msg,login } = this.props;
+		const { login } = this.props;
 		return(
 			<div className="wrap">
 				{
-	    				show?<Dialog msg={msg} sure={this.sure}
-	    				cancel={this.cancel}/>:''
+	    				this.state.showDialog?<Dialog msg={this.state.msg} sure={this.sure.bind(this)}
+	    				cancel={this.cancel.bind(this)}/>:''
 	    			}
 	        		<Header title="登录"/>
 	        		<div className="login">
@@ -26,7 +39,7 @@ class Register extends React.Component {
 	        			<input ref="phone" type="text" placeholder="请输入手机号码"/>
 	        			<p>密码: </p>
 	        			<input ref="psw" type="password" placeholder="请输入密码"/>
-	        			<p className="submit orange" onClick={login}>立即登录</p>
+	        			<p className="submit orange" onClick={login.bind(this,this)}>立即登录</p>
         			</div>
         		</div>
 		);

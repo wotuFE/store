@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="z_doc/静态文件/js/flexible.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			* {padding: 0;margin: 0;}
+			.layout {
+				background-color: rgba(0, 0, 0, 0.541176);
+				position: fixed;
+				height: 100%;
+				width: 100%;
+				top: 0px;
+				left: 0px;
+			}
+			
+			.dialog {
+				position: absolute;
+				z-index: 100;
+				height: 200px;
+				width: 400px;
+				left: 175px;
+				top: 300px;
+				background: #fff;
+			}
+			
+			.dialog h5 {
+				/*text-align: center;*/
+				padding-left: 20px;
+				height: 60px;
+				line-height: 60px;
+				font-size: 30px;
+			}
+			
+			.dialog .content {
+				padding: 20px;
+				color: #888;
+			}
+			
+			.dialog .confirm {
+				padding-right: 30px;
+				text-align: right;
+			}
+			
+			.dialog .confirm span {
+				width: 80px;
+				height: 40px;
+				color: orange;
+				font-size: 28px;
+				margin-left: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<script>
+			var arr = ["Children", "Component", "PureComponent", "createElement", "cloneElement", "isValidElement", "PropTypes", "createClass", "createFactory", "createMixin", "DOM", "version", "__spread"];
+			
+			function compare(a,b) {
+				a = a.toLowerCase();
+				b = b.toLowerCase();
+				return a>b?1:-1;
+			}
+			
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,26 @@
+{
+  "resCode": "000",
+  "resMsg": "success",
+  "list": [
+    {
+      "amount": "10",
+      "minBuyAmount": "50",
+      "effectiveDate": "2016-12-3"
+    },
+    {
+      "amount": "20",
+      "minBuyAmount": "100",
+      "effectiveDate": "2016-12-3"
+    },
+    {
+      "amount": "30",
+      "minBuyAmount": "150",
+      "effectiveDate": "2016-12-3"
+    },
+    {
+      "amount": "40",
+      "minBuyAmount": "200",
+      "effectiveDate": "2015-12-3"
+    }
+  ]
+}

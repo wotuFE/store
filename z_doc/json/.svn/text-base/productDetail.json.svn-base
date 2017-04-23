@@ -1,0 +1,17 @@
+{
+  "resCode": "000",
+  "resMsg": "success",
+  "productDetail": {
+    "shopName": "酱烧鸭拌饭",
+    "price": "18",
+    "oldPrice": "",
+    "imgUrl": "http://op.jiawang.cn:9090/dd_op/attached/image/20150714/20150714114213-1100397-product_pic.jpg",
+    "id": "1111",
+    "disc": "超级美味",
+    "leftNum": "999",
+    "imgList": [
+      "http://op.jiawang.cn:9090/dd_op/attached/image/20150714/20150714114213-1100397-product_pic.jpg",
+      "http://jjs.jiawang.cn/assets/img/jw-weixin.png"
+    ]
+  }
+}
