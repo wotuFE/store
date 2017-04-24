@@ -3,4 +3,3 @@ let info = {
     ...obj,
     c:444
 }
-console.log(info);

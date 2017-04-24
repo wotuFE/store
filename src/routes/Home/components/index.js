@@ -6,7 +6,6 @@ import Header from '../../../components/Header'
 class HomeView extends Component {
 	constructor(props) {
 		super(props);
-		console.log('isLogin',props.isLogin);
 		this.state = {
 			currPage: 1,
 			recommandPrd: null,

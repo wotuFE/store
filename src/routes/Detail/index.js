@@ -8,8 +8,8 @@ export default (store) => ({
         require.ensure([], (require) => {
             /*  Webpack - use require callback to define
                 dependencies for bundling   */
-            const container = require( './containers').default
-            const reducer = require('./modules').default
+            const container = require( './containers/DetailContainer').default
+            const reducer = require('./modules/DetailReducer').default
                 /*  Add the reducer to the store on key 'register'  */
             injectReducer(store, { key: 'detail' , reducer })
                 /*  Return getComponent   */

@@ -1,0 +1,108 @@
+body {
+    background: #F5F5F5;
+}
+
+.detail {
+    .img-box img {
+        width: 100%;
+        height: 6.4rem;
+    }
+    .info {
+        height: 1.133333rem;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 0.266666rem;
+        font-size: 0.28rem;
+        .one {
+            span:first-child {
+                margin-right: 10px;
+            }
+        }
+        .two {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .buyNum {
+        display: flex;
+        height: 0.866666rem;
+        padding: 0 0.266666rem;
+        font-size: 0.28rem;
+        line-height: 0.866666rem;
+        background: #fff;
+        margin-top: 10px;
+        justify-content: space-between;
+        align-items: center;
+        p {
+            display: flex;
+            align-items: center;
+            .add,
+            .minus {
+                align-items: center;
+                display: inline-flex;
+                justify-content: center;
+                width: 35px;
+                height: 35px;
+                color: orange;
+                border-radius: 50%;
+                text-align: center;
+                border: 1px solid;
+            }
+            .num {
+                margin: 0 0.133333rem;
+            }
+        }
+    }
+    .bottom {
+        position: relative;
+        height: 0.96rem;
+        background: #fff;
+        margin-top: 60px;
+        .icon-car {
+            z-index: 999;
+            width: 0.8rem;
+            height: 0.8rem;
+            top: 0.133333rem;
+            left: 0.586666rem;
+            position: absolute;
+            left: 0.266666rem;
+            
+            background: url(../../../images/icon-car2.png)no-repeat;
+            background-size: 100% 100%;
+            span {
+                width: 0.4rem;
+                height: 0.4rem;
+                position: absolute;
+                background: url(../../../images/qipao.png)no-repeat;
+                right: 0;
+                top: 0;
+                background-size: 100% 100%;
+                color: #fff;
+                text-align: center;
+                font-size: 0.2rem;
+                line-height: 0.4rem;
+            }
+        }
+        .addCar,
+        .buyNow {
+            width: 2.6rem;
+            height: 0.96rem;
+            line-height: 0.96rem;
+            text-align: center;
+            float: right;
+            color: #fff;
+            font-size: 0.32rem;
+        }
+        .addCar {
+            float: right;
+            background: #FFA507;
+        }
+        .buyNow {
+            float: right;
+            background: #FF7007;
+        }
+    }
+}

@@ -6,7 +6,6 @@ const commonArr = [
 	'componentDidMount',
 	'shouldComponentUpdate',
 	'componentDidUpdate',
-	
 ];
 const objArr = [
 	["常用方法", commonArr],
