@@ -12,7 +12,6 @@ class CoreLayout extends React.Component {
 	render() {
 		return (
 			<div className='container text-center'>
-            <Footer />
             <div className='core-layout__viewport'>
                 {this.props.children}
             </div>

@@ -1,0 +1,95 @@
+body {
+    background: #F5F5F5;
+}
+
+.pay {
+    .top {
+        padding-top: 2rem;
+        height: 6.16rem;
+        background: url(../../../images/face_top.png);
+        .pepole {
+            display: flex;
+            justify-content: center;
+            img:last-child {}
+            span {
+                display: inline-block;
+                position: relative;
+                top: 0.333333rem;
+                margin: 0 0.4rem;
+                width: 1.333333rem;
+                background: url(../../../images/face_arrow.png)no-repeat;
+            }
+        }
+        .tip {
+            color: #fff;
+            font-size: 0.293333rem;
+            text-align: center;
+            margin-top: 0.4rem;
+        }
+    }
+    .pay-box {
+        height: 3.16rem;
+        background: url(../../../images/face_mid.png)no-repeat center;
+        background-size: 50% auto;
+        margin-top: -1.066666rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.373333rem;
+        input {}
+        p:first-child {
+            margin-top: 0.4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           font-size: 0.32rem;
+            i {
+                color: #999999;
+            }
+            input {
+                width: 60%;
+                text-indent: 0.133333rem;
+                background: transparent;
+                outline: none;
+                border: none;
+            }
+            span {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid orange;
+                width: 0.333333rem;
+                height: 0.333333rem;
+                padding: 0.04rem;
+                color: orange;
+                border-radius: 50%;
+            }
+        }
+        p.line {
+            width: 40%;
+            height: 0.133333rem;
+            margin-top: 0.133333rem;
+            background: url(../../../images/twoline.png);
+            background-repeat: repeat-x;
+        }
+        p:last-child {
+            margin-top: 0.4rem;
+            color: #886E6E;
+            font-size: 0.32rem;
+        }
+    }
+    .pay2 {
+        margin-top: 0.266666rem;
+        display: flex;
+        justify-content: center;
+        button {
+            width: 6rem;
+            height: 0.826666rem;
+            background: #6bb600;
+            border: 4px solid #629f0b;
+            color: #fff;
+            border-radius: 0.066666rem;
+        }
+    }
+}

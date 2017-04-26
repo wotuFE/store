@@ -63,7 +63,7 @@ class HomeView extends Component {
 				</ul>
 				<ul className="coupon">
 					<li>
-						<p>$<span>20</span></p>
+						<p>¥<span>20</span></p>
 						<p className="quan"><span>优惠券</span></p>
 						<span className="circle c1"></span>
 						<span className="circle c2"></span>
@@ -71,7 +71,7 @@ class HomeView extends Component {
 						<span className="get">立即领取</span>
 					</li>
 					<li>
-						<p>$<span>30</span></p>
+						<p>¥<span>30</span></p>
 						<p className="quan"><span>优惠券</span></p>
 						<span className="circle c1"></span>
 						<span className="circle c2"></span>
@@ -89,7 +89,7 @@ class HomeView extends Component {
 									<p><img onClick={this.props.toDetail.bind(this,item.id)} src={item.imgUrl}/></p>
 									<p>
 										<span>{item.shopName} </span>
-										<span>$ {item.price} id: {item.id}</span>
+										<span>¥ {item.price} id: {item.id}</span>
 									</p>
 									<i onClick={addToCar.bind(this,this,item.id)}></i>
 								</li>

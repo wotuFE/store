@@ -1,0 +1,42 @@
+body {
+    background: #f5f5f5;
+}
+
+.nav {
+    background: #fff;
+}
+
+.order {
+    img {
+        width: 100%;
+    }
+    ul {
+        background: #fff;
+        padding: 0 0.266666rem;
+        li {
+            height: 0.76rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #999;
+        }
+        li.need-pay {
+            color: #000000;
+            span:last-child {
+                color: orange;
+            }
+        }
+    }
+    .btn {
+        background: #6bb600;
+        border-bottom: 4px solid #629f0b;
+        color: #fff;
+        width: 6rem;
+        height: 0.826666rem;
+        border-radius: 0.066666rem;;
+        display: flex;
+         margin: 0.533333rem auto;
+        justify-content: center;
+        align-items: center;
+    }
+}

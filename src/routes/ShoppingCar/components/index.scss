@@ -1,0 +1,166 @@
+body {
+    background: #F5F5F5;
+}
+
+.nav {
+    background: #fff;
+    border-bottom: 1px solid;
+    span.edit {
+        display: inline-flex;
+    }
+}
+
+.shopping {
+    .icon {
+        display: inline-flex;
+        width: 0.44rem;
+        height: 0.44rem;
+        border: 1px solid #999;
+        background-size: 80% 80%;
+        border-radius: 50%;
+    }
+    .select {
+        background: #6bb600 url(../../../images/icon-chose.png)no-repeat center;
+    }
+    .list {
+        li {
+            position: relative;
+            height: 1.6rem;
+            border-bottom: 1px solid #DADADA;
+            background: #fff;
+            display: flex;
+            padding: 0 0.266666rem;
+            align-items: center;
+            .one,
+            .three {
+                position: absolute;
+            }
+            .one {
+                left: 0.266666rem;
+            }
+            .two {
+                margin-left: 0.666666rem;
+                display: flex;
+                img {
+                    width: 1.066666rem;
+                    height: 1.066666rem;
+                }
+            }
+            .info {
+                margin-left: 0.266666rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-size: 0.28rem;
+                p {
+                    line-height: 1.5;
+                }
+            }
+            .three {
+                right: 0.266666rem;
+                .operate {
+                    .add,
+                    .minus {
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #ff9000;
+                        width: 0.466666rem;
+                        height: 0.466666rem;
+                        border: 1px solid;
+                        box-sizing: content-box;
+                        border-radius: 50%;
+                    }
+                    .num {
+                        display: inline-flex;
+                        width: 0.533333rem;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+    .shopping-footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 0.96rem;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .all {
+            margin-left: 0.266666rem;
+            span {
+                margin-left: 0.133333rem;
+                position: relative;
+                top: -0.066666rem;
+            }
+        }
+        .other {
+            display: flex;
+            height: 100%;
+            .total {
+                display: flex;
+                flex-direction: column;
+                font-size: 0.36rem;
+                margin-right: 0.266666rem;
+                align-items: center;
+                justify-content: center;
+            }
+            .cal {
+                &:after {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    background: #ff7007;
+                    color: #fff;
+                    content: '去结算';
+                    width: 100%;
+                    height: 100%;
+                    font-size: 0.32rem;
+                    width: 2.026666rem;
+                }
+            }
+            .delete {
+                display: none;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                background: #ff7007;
+                color: #fff;
+                width: 100%;
+                height: 100%;
+                font-size: 0.32rem;
+                width: 2.026666rem;
+                background:#F44336;
+            }
+        }
+    }
+}
+
+// 编辑状态
+.shopping.edit {
+    .icon {
+        background-color: #F44336;
+    }
+    .three {
+        .prdNum {
+            display: none;
+        }
+        .operate {
+            display: block!important;
+        }
+    }
+    .cal {
+        display: none;
+    }
+    .delete {
+        display: inline-flex!important;
+    }
+    .total {
+        display: none!important;
+    }
+}

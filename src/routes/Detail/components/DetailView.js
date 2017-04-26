@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './detail.scss'
+import { Link } from 'react-router'
 
 class DetailView extends Component {
     constructor(props) {
@@ -21,7 +22,7 @@ class DetailView extends Component {
                         <span>{detail.disc}</span>
                     </div>
                     <div className="two">
-                        <p>$ {detail.price}</p>
+                        <p>¥ {detail.price}</p>
                         <p>
                             剩余数量: 999
                 			</p>
@@ -40,14 +41,14 @@ class DetailView extends Component {
                 </div>
                 <div className="bottom">
                     {
-                        !this.props.shopNum ? '' : <div className="icon-car">
+                        !this.props.shopNum ? '' : <Link to="/shoppingCar"><div className="icon-car">
                             <span>{this.props.shopNum}</span>
-                        </div>
+                        </div></Link>
                     }
                     <div onClick={()=>{this.props.addToCar(detail.id,this.refs.buyNum.innerText
 )}} 
 className="addCar">加入到购物车</div>
-                    <div className="buyNow">立即购买</div>
+                   <div onClick={this.props.buyNow} className="buyNow">立即购买</div>
                 </div>
             </div>
         )

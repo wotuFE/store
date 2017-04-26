@@ -1,11 +1,21 @@
 .nav {
     position: relative;
-    padding-left: 1.026666rem;
+//  padding-left: 1.026666rem;
     height: 1.2rem;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.17);
     line-height: 1.2rem;
     color: #999;
     font-size: 0.4rem;
+    display: flex;
+    a {
+        width: 100px;
+    }
+    span.edit {
+        flex-grow: 1;
+        display: none;
+        justify-content: flex-end;
+        padding-right: 0.266666rem;
+    }
     i {
         position: absolute;
         width: 0.666666rem;

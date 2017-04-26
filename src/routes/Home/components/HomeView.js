@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './HomeView.scss'
+import { Link } from 'react-router'
 
 class HomeView extends Component {
 	constructor(props) {
@@ -30,7 +31,7 @@ class HomeView extends Component {
 						</ul>
 						<ul className="coupon">
 							<li>
-								<p>$<span>20</span></p>
+								<p>¥<span>20</span></p>
 								<p className="quan"><span>优惠券</span></p>
 								<span className="circle c1"></span>
 								<span className="circle c2"></span>
@@ -38,7 +39,7 @@ class HomeView extends Component {
 								<span className="get">立即领取</span>
 							</li>
 							<li>
-								<p>$<span>30</span></p>
+								<p>¥<span>30</span></p>
 								<p className="quan"><span>优惠券</span></p>
 								<span className="circle c1"></span>
 								<span className="circle c2"></span>
@@ -54,12 +55,12 @@ class HomeView extends Component {
 										return (
 											<li key={item.id}>
 												{/*{<p><img onClick={()=>{this.props.toDetail(item.id)}} src={item.imgUrl} /></p>}*/}
-												<p><img onClick={()=>{this.props.toDetail(item.id)}} src={item.imgUrl} /></p>
+												<p><img onClick={() => { this.props.toDetail(item.id) }} src={item.imgUrl} /></p>
 												<p>
 													<span>{item.shopName} </span>
-													<span>$ {item.price} id: {item.id}</span>
+													<span>¥ {item.price} id: {item.id}</span>
 												</p>
-												<i onClick={()=>{this.props.addToCar(item.id)}}></i>
+												<i onClick={() => { this.props.addToCar(item.id) }}></i>
 											</li>
 										)
 									})
@@ -67,11 +68,11 @@ class HomeView extends Component {
 							</ul>
 						</div>
 						{
-							showMore?<div className='more' onClick={this.props.getPrdList}>点击加载更多</div>:''
+							showMore ? <div className='more' onClick={this.props.getPrdList}>点击加载更多</div> : ''
 						}
-						
+
 						{
-							shopNum?<a className="icon-car"><i>{shopNum}</i> </a> : ''
+							shopNum ? <Link to="/shoppingCar"><span className="icon-car"><i>{shopNum}</i> </span> </Link>: ''
 						}
 					</div>
 				</div>
